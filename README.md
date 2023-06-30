@@ -54,12 +54,6 @@ LIVE NEWS APP with Next.JS 13! Implemented to handle dynamic data and static dat
 
 ### :camera: Screenshots
 
-<!-- <div align="center"> -->
-<!-- <a href="hhttps://instagram-build-gamma.vercel.app/" target="_blank"><img  src='' alt='image'/></a> -->
-<!--   https://user-images.githubusercontent.com/86107841/227702718-6b2f26d4-aa3d-4ae6-9f56-ec09b77191bd.mp4 -->
-
-<!-- </div> -->
-
 
 
 
@@ -247,7 +241,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Convert Next.js12 to Next.js13 by modifying `next.config.js` with 
+
+```bash
+  experimental: {
+    appDir: true,
+  }
+```
+
+Create an `app` folder with `page.tsx` and delete `index.js` to avoid conficts. Now, create `head.tsx` and `layout.tsx` and import the `globals.css` in layout file.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
@@ -257,10 +261,87 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js13 Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+
+<div align="center">
+<a href="#instagram"><img src="https://th.bing.com/th/id/OIP.TYSI9X2gE5owf4-Ac--_OwAAAA?pid=ImgDet&rs=1" alt="Instagram" width="" height="45" /></a>
+</div>
+
+### :alien: Mediastack API
+
+Signup at [Medistack platform](https://www.mediastackapi.com), copy the `API Access API` key.
+
+
+<div align="center">
+<a href="#instagram"><img src="https://user-images.githubusercontent.com/99184393/210094642-427ffa8a-3ba6-4ade-99dd-7061ae6bf81c.png" alt="Instagram" width="" height="45" /></a>
+</div>
+
+### Setting Up StepZen
+
+#### Create an account
+
+- Sign up for a StepZen account <a href='https://stepzen.com'>HERE</a>
+
+#### Running StepZen
+
+Install the CLI
+
+```bash
+
+npm install -g stepzen
+
+```
+
+After installing the CLI, you can connect it to your account.
+
+Start by logging in using the following command:
+
+```bash
+
+stepzen login
+
+```
+
+You'll see a series of command prompts asking for your StepZen account name and admin key:
+
+```bash
+What is your account name?: {ACCOUNT}
+What is your admin key?: {ADMINKEY}
+```
+
+Your Admin Key and API Key\*\*
+
+When you get your account, log in to StepZen and navigate to the <a href='https://dashboard.stepzen.com'>StepZen dashboard</a>, where you will find your account name, and the two keys you need for API authentication:
+
+#### stepzen init
+
+Initialize a StepZen workspace in the current directory.
+
+```bash
+stepzen init
+```
+
+#### GET requests
+
+Auto-generate your schemas and resolvers using the following StepZen CLI command:
+
+News
+
+```bash
+stepzen import curl "http://api.mediastack.com/v1/news?access_key=YOUR_ACCESS_KEY&countries=us%2Cgb&limit=100&offset=0&sort=published_desc"
+```
+
+Deploy
+
+```bash
+stepzen start
+```
+
+<hr />
 
 <!-- Deployment -->
 
