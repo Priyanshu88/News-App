@@ -61,8 +61,10 @@ LIVE NEWS APP with Next.JS 13! Implemented to handle dynamic data and static dat
 </div>
 
 
+### :video_camera: Demo
 
-Uploading News-App Demo.mp4…
+https://github.com/Priyanshu88/News-App/assets/86107841/96604060-8c7a-4a3f-8894-57434123b930
+
 
 
 
@@ -280,7 +282,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 <a href="#instagram"><img src="https://th.bing.com/th/id/OIP.TYSI9X2gE5owf4-Ac--_OwAAAA?pid=ImgDet&rs=1" alt="Instagram" width="" height="45" /></a>
 </div>
 
-## :alien: API Implementation and StepZen
+### :alien: API Implementation and StepZen
 
 ### MediastackAPI
 
