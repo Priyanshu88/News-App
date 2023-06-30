@@ -43,6 +43,7 @@ LIVE NEWS APP with Next.JS 13! Implemented to handle dynamic data and static dat
   - [Prerequisites](#bangbang-prerequisites)
   - [Installation](#gear-installation)
   - [Run Locally](#running-run-locally)
+  - [API Implementation and StepZen](#alien-api-implementation-and-stepzen)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [Contact](#handshake-contact)
 
@@ -271,7 +272,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 <a href="#instagram"><img src="https://th.bing.com/th/id/OIP.TYSI9X2gE5owf4-Ac--_OwAAAA?pid=ImgDet&rs=1" alt="Instagram" width="" height="45" /></a>
 </div>
 
-### :alien: Mediastack API
+## :alien: API Implementation and StepZen
+
+### MediastackAPI
 
 Signup at [Medistack platform](https://www.mediastackapi.com), copy the `API Access API` key.
 
