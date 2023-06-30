@@ -56,6 +56,14 @@ LIVE NEWS APP with Next.JS 13! Implemented to handle dynamic data and static dat
 ### :camera: Screenshots
 
 
+<div align="center">
+<a href="https://news-app-theta-bice.vercel.app/" target="_blank"><img  src='https://github.com/Priyanshu88/News-App/assets/86107841/d70318e4-9119-4b59-92c4-aabe283e365f' alt='image'/></a>
+</div>
+
+
+
+Uploading News-App Demo.mp4…
+
 
 
 ## <a href="https://news-app-theta-bice.vercel.app/" target="_blank">LIVE DEMO 💥</a>
